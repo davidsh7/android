@@ -35,6 +35,12 @@
             android:label="@string/informacion" >
         </activity>
 
+        <activity
+            android:name=".contacto"
+            android:screenOrientation="portrait"
+            android:label="@string/contacto" >
+        </activity>
+
     </application>
 
 </manifest>

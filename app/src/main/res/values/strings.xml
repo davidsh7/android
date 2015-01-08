@@ -20,7 +20,10 @@
     
     <!-- Layout informacion --> 
     <string name="informacion">Información empresa</string>
-    
+
+    <!-- Layout contacto -->
+    <string name="contacto">Contacto</string>
+
     <!-- ListView --> 
     
     <string name="titulo0">Información</string>

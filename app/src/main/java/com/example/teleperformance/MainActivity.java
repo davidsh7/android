@@ -200,5 +200,11 @@ public class MainActivity extends ActionBarActivity implements OnClickListener,O
     	}
     	return false;
     }
+
+    public void contacto(View view){
+        Intent actividad = new Intent();
+        actividad.setClass(this, contacto.class);
+        startActivity(actividad);
+    }
       
 }

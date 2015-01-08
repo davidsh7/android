@@ -1316,9 +1316,9 @@ containing a value of this type.
         public static final int salir=0x7f020041;
     }
     public static final class id {
-        public static final int LblImagen=0x7f080049;
-        public static final int LblSubTitulo=0x7f08004b;
-        public static final int LblTitulo=0x7f08004a;
+        public static final int LblImagen=0x7f080050;
+        public static final int LblSubTitulo=0x7f080052;
+        public static final int LblTitulo=0x7f080051;
         public static final int action_bar=0x7f080031;
         public static final int action_bar_activity_content=0x7f080000;
         public static final int action_bar_container=0x7f080030;
@@ -1332,15 +1332,21 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_search=0x7f080050;
+        public static final int action_search=0x7f080057;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
+        public static final int btnAgregar=0x7f08004f;
         public static final int button1=0x7f080042;
         public static final int button2=0x7f080043;
+        public static final int button3=0x7f080046;
         public static final int checkbox=0x7f080029;
+        public static final int cmpDireccion=0x7f08004e;
+        public static final int cmpEmail=0x7f08004d;
+        public static final int cmpNombre=0x7f08004b;
+        public static final int cmpTelefono=0x7f08004c;
         public static final int collapseActionView=0x7f080017;
-        public static final int contactenos=0x7f08004e;
+        public static final int contactenos=0x7f080055;
         public static final int decor_content_parent=0x7f08002f;
         public static final int default_activity_button=0x7f080024;
         public static final int dialog=0x7f08001b;
@@ -1356,10 +1362,10 @@ containing a value of this type.
         public static final int icon=0x7f080026;
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
-        public static final int imageButton1=0x7f080047;
-        public static final int imageButton2=0x7f080048;
-        public static final int imageView1=0x7f080046;
-        public static final int informacion=0x7f08004d;
+        public static final int imageButton1=0x7f080048;
+        public static final int imageButton2=0x7f080049;
+        public static final int imageView1=0x7f080047;
+        public static final int informacion=0x7f080054;
         public static final int listMode=0x7f080009;
         public static final int listView1=0x7f080044;
         public static final int list_item=0x7f080025;
@@ -1370,8 +1376,8 @@ containing a value of this type.
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
-        public static final int ratingBar1=0x7f08004c;
-        public static final int salir=0x7f08004f;
+        public static final int ratingBar1=0x7f080053;
+        public static final int salir=0x7f080056;
         public static final int search_badge=0x7f080035;
         public static final int search_bar=0x7f080034;
         public static final int search_button=0x7f080036;
@@ -1389,6 +1395,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f080007;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
+        public static final int textView=0x7f08004a;
         public static final int textView1=0x7f08003f;
         public static final int textView2=0x7f080040;
         public static final int textView3=0x7f080045;
@@ -1427,11 +1434,12 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
         public static final int contactenos=0x7f030018;
-        public static final int informacion=0x7f030019;
-        public static final int list_fragment=0x7f03001a;
-        public static final int listitem=0x7f03001b;
-        public static final int mensaje=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int contacto=0x7f030019;
+        public static final int informacion=0x7f03001a;
+        public static final int list_fragment=0x7f03001b;
+        public static final int listitem=0x7f03001c;
+        public static final int mensaje=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1458,24 +1466,25 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0011;
         public static final int app_name=0x7f0a0012;
         public static final int contactenos=0x7f0a0013;
-        public static final int facebook=0x7f0a0014;
-        public static final int hello_world=0x7f0a0015;
-        public static final int informacion=0x7f0a0016;
-        public static final int menu1=0x7f0a0017;
-        public static final int menu2=0x7f0a0018;
-        public static final int menu3=0x7f0a0019;
-        public static final int nombre_empresa=0x7f0a001a;
-        public static final int strEdad=0x7f0a001b;
-        public static final int strTitulo=0x7f0a001c;
-        public static final int strValoracion=0x7f0a001d;
-        public static final int subtitulo0=0x7f0a001e;
-        public static final int subtitulo1=0x7f0a001f;
-        public static final int subtitulo2=0x7f0a0020;
-        public static final int titulo0=0x7f0a0021;
-        public static final int titulo1=0x7f0a0022;
-        public static final int titulo2=0x7f0a0023;
-        public static final int twiter=0x7f0a0024;
-        public static final int url_empresa=0x7f0a0025;
+        public static final int contacto=0x7f0a0014;
+        public static final int facebook=0x7f0a0015;
+        public static final int hello_world=0x7f0a0016;
+        public static final int informacion=0x7f0a0017;
+        public static final int menu1=0x7f0a0018;
+        public static final int menu2=0x7f0a0019;
+        public static final int menu3=0x7f0a001a;
+        public static final int nombre_empresa=0x7f0a001b;
+        public static final int strEdad=0x7f0a001c;
+        public static final int strTitulo=0x7f0a001d;
+        public static final int strValoracion=0x7f0a001e;
+        public static final int subtitulo0=0x7f0a001f;
+        public static final int subtitulo1=0x7f0a0020;
+        public static final int subtitulo2=0x7f0a0021;
+        public static final int titulo0=0x7f0a0022;
+        public static final int titulo1=0x7f0a0023;
+        public static final int titulo2=0x7f0a0024;
+        public static final int twiter=0x7f0a0025;
+        public static final int url_empresa=0x7f0a0026;
     }
     public static final class style {
         /** 
