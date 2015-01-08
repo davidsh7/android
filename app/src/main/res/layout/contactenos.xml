@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:onClick="volver"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menu_revert" />
+    </LinearLayout>
+    
+	 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/contactenos" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="36sp" 
+        android:textStyle="bold" />
+	 
+	 <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:text="@string/url_empresa" 
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" 
+        android:textStyle="italic" />
+	 
+	 <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="@string/nombre_empresa" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
+	 <ImageView
+	     android:id="@+id/imageView1"
+	     android:layout_width="fill_parent"
+	     android:layout_height="260dp"
+	     android:src="@drawable/iconshare_facebook" 
+	     android:contentDescription="@string/contactenos"
+	     android:paddingBottom="16dp" />
+
+	 <RelativeLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content" >
+
+	     <ImageButton
+	         android:id="@+id/imageButton1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:contentDescription="@string/twiter"
+	         android:background="@null"
+	         android:layout_alignParentRight="true"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginRight="64dp"
+	         android:onClick="irtwiter"
+	         android:src="@drawable/ic_twitter" />
+
+	     <ImageButton
+	         android:id="@+id/imageButton2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:contentDescription="@string/facebook"
+	         android:background="@null"
+	         android:layout_alignParentLeft="true"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginLeft="55dp"
+	         android:onClick="irfacebook"
+	         android:src="@drawable/ic_facebook" />
+	     
+	 </RelativeLayout>
+    
+</LinearLayout>

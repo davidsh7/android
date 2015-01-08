@@ -1,0 +1,5 @@
+C:\Android\AndroidStudioProjects\Teleperformance\app\build\intermediates\classes\debug
+C:\Android\AndroidStudioProjects\Teleperformance\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-99c1ccd53a7fa88549c32ac544faa9e96cd17557.jar
+C:\Android\AndroidStudioProjects\Teleperformance\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-b44a9a6623da1ea24c2d34e3e3c2c6605d118c05.jar
+C:\Android\AndroidStudioProjects\Teleperformance\app\build\intermediates\pre-dexed\debug\classes-6421575ddc51879a73ae6a14bd665d4daaa85bf4.jar
+C:\Android\AndroidStudioProjects\Teleperformance\app\build\intermediates\pre-dexed\debug\classes-0de091c3569e0b00ad1e9c5c3665e08d0d6fd7b5.jar

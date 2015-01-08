@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Teleperformance</string>
+    <string name="action_settings">Ajustes</string>
+    
+    <!-- Layout Main --> 
+    
+    <string name="hello_world">Hola Mundo!</string>
+    <string name="strEdad">Ingrese su edad</string>
+    <string name="strTitulo">Teleperformance Colombia</string>
+    <string name="strValoracion">Valorar la aplicación</string>
+    
+    <!-- Layout contactenos --> 
+    <string name="contactenos">Contactenos empresa</string>
+    <string name="nombre_empresa">Teleperformance Colombia</string>
+    <string name="url_empresa"><a href="http://www.teleperformance.com/"></a></string>
+    <string name="facebook">Facebook</string>
+    <string name="twiter">Twitter</string>
+    
+    <!-- Layout informacion --> 
+    <string name="informacion">Información empresa</string>
+    
+    <!-- ListView --> 
+    
+    <string name="titulo0">Información</string>
+    <string name="subtitulo0">Información</string>
+    <string name="titulo1">Contactenos</string>
+    <string name="subtitulo1">Contactenos</string>
+    <string name="titulo2">Salir</string>
+    <string name="subtitulo2">Salir</string>
+    
+    <!-- Menu --> 
+    
+    <string name="menu1">Información</string>
+    <string name="menu2">Contactenos</string>
+    <string name="menu3">Salir</string>
+    
+    <!-- Action Bar --> 
+    
+    <string name="action_search">Buscar</string>
+
+</resources>
