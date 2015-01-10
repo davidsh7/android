@@ -1,4 +1,4 @@
-package com.example.teleperformance;
+package com.example.teleperformance.activity;
 
 //import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -31,6 +31,9 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 
+import com.example.teleperformance.R;
+import com.example.teleperformance.rules.clsAdapter;
+
 //public class MainActivity extends Activity {
 //public class MainActivity extends ListActivity {
 public class MainActivity extends ActionBarActivity implements OnClickListener,OnLongClickListener,OnTouchListener  {
@@ -55,15 +58,15 @@ public class MainActivity extends ActionBarActivity implements OnClickListener,O
 				Intent actividad = new Intent();
 				switch (position) {
 				case 0: // Opcion 1 
-					actividad.setClass(getApplicationContext(), informacion.class);
-					actividad.putExtra("informacion", getApplicationContext().getResources().getString(R.string.informacion));
+					actividad.setClass(getApplicationContext(), informacionActivity.class);
+					actividad.putExtra("informacionActivity", getApplicationContext().getResources().getString(R.string.informacion));
 					actividad.putExtra("foto", R.drawable.ic_teleperformance);
 					startActivity(actividad);
 					//Toast.makeText(getApplicationContext(),"Pantalla Informaci�n", Toast.LENGTH_LONG).show();
 					break;
 				case 1: // opcion 2
 					//Toast.makeText(getApplicationContext(),"Pantalla Contactenos", Toast.LENGTH_LONG).show();
-					actividad.setClass(getApplicationContext(), contactenos.class);
+					actividad.setClass(getApplicationContext(), contactenosActivity.class);
 					startActivity(actividad);
 					break;
 				default:
@@ -150,14 +153,14 @@ public class MainActivity extends ActionBarActivity implements OnClickListener,O
     	switch(item.getItemId()){
     	case R.id.informacion:
     		//Toast.makeText(this,"Pantalla Informaci�n", Toast.LENGTH_SHORT).show();
-    		actividad.setClass(this, informacion.class);
-			actividad.putExtra("informacion", this.getResources().getString(R.string.informacion));
+    		actividad.setClass(this, informacionActivity.class);
+			actividad.putExtra("informacionActivity", this.getResources().getString(R.string.informacion));
 			actividad.putExtra("foto", R.drawable.ic_teleperformance);
     		startActivity(actividad);
     		return true;
     	case R.id.contactenos:
     		//Toast.makeText(this,"Pantalla Contactenos", Toast.LENGTH_SHORT).show();
-    		actividad.setClass(this, contactenos.class);
+    		actividad.setClass(this, contactenosActivity.class);
     		startActivity(actividad);
     		return true;
     	case R.id.salir:
@@ -203,7 +206,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener,O
 
     public void contacto(View view){
         Intent actividad = new Intent();
-        actividad.setClass(this, contacto.class);
+        actividad.setClass(this, contactoActivity.class);
         startActivity(actividad);
     }
       

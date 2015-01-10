@@ -1,6 +1,4 @@
-package com.example.teleperformance;
-
-import java.util.ArrayList;
+package com.example.teleperformance.rules;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,18 +8,23 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.teleperformance.R;
+import com.example.teleperformance.entities.clsNodeEntity;
+
+import java.util.ArrayList;
+
 //import android.widget.ArrayAdapter;
 
 //public class clsAdapter extends ArrayAdapter<Object> {
 public class clsAdapter extends BaseAdapter {
 
-	private static ArrayList<Node> mArray = new ArrayList<Node>();
+	private static ArrayList<clsNodeEntity> mArray = new ArrayList<clsNodeEntity>();
 	
 	//Array con los Datos que se mostraran en la lista
-	/*private static Node[] datos = new Node[] {
-			new Node("Información",	"Calcula los porcentages", R.drawable.informacion),
-			new Node("Contactenos","Subtitulo largo 2", R.drawable.contactenos),
-			new Node("Salir", "Subtítulo largo 3", R.drawable.salir),
+	/*private static clsNode[] datos = new clsNode[] {
+			new clsNode("Informaciï¿½n",	"Calcula los porcentages", R.drawable.informacionActivity),
+			new clsNode("Contactenos","Subtitulo largo 2", R.drawable.contactenosActivity),
+			new clsNode("Salir", "Subtï¿½tulo largo 3", R.drawable.salir),
 	};*/
 	
 	//Constructor de la clase clsAdapter
@@ -37,19 +40,19 @@ public class clsAdapter extends BaseAdapter {
 	
 	private void setData(){
 		mArray.clear();
-		Node objNode0 = new Node();
+		clsNodeEntity objNode0 = new clsNodeEntity();
 		objNode0.setTitulo(context.getResources().getString(R.string.titulo0));
 		objNode0.setSubtitulo(context.getResources().getString(R.string.subtitulo0));
 		objNode0.setImagen(R.drawable.informacion);
 		mArray.add(objNode0);
 		
-		Node objNode1 = new Node();
+		clsNodeEntity objNode1 = new clsNodeEntity();
 		objNode1.setTitulo(context.getResources().getString(R.string.titulo1));
 		objNode1.setSubtitulo(context.getResources().getString(R.string.subtitulo1));
 		objNode1.setImagen(R.drawable.contactenos);
 		mArray.add(objNode1);
 		
-		Node objNode2 = new Node();
+		clsNodeEntity objNode2 = new clsNodeEntity();
 		objNode2.setTitulo(context.getResources().getString(R.string.titulo2));
 		objNode2.setSubtitulo(context.getResources().getString(R.string.subtitulo2));
 		objNode2.setImagen(R.drawable.salir);

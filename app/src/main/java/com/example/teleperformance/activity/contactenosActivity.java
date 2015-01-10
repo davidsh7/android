@@ -1,4 +1,4 @@
-package com.example.teleperformance;
+package com.example.teleperformance.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-public class contactenos extends Activity  {
+import com.example.teleperformance.R;
+
+public class contactenosActivity extends Activity  {
 	
 	 @Override
 	 protected void onCreate(Bundle savedInstanceState) {

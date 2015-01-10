@@ -3,66 +3,133 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:padding="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Crear Contacto"
-        android:id="@+id/textView"
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_centerHorizontal="true">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/cmpNombre"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:hint="Nombre del contacto"
-        android:layout_marginTop="15dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/cmpTelefono"
-        android:layout_below="@+id/cmpNombre"
-        android:hint="Teléfono"
-        android:layout_alignRight="@+id/cmpNombre"
-        android:layout_alignEnd="@+id/cmpNombre" />
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
-        android:ems="10"
-        android:id="@+id/cmpEmail"
-        android:layout_below="@+id/cmpTelefono"
-        android:layout_alignRight="@+id/cmpTelefono"
-        android:layout_alignEnd="@+id/cmpTelefono"
-        android:hint="Correo electrónico" />
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
-        android:ems="10"
-        android:id="@+id/cmpDireccion"
-        android:layout_below="@+id/cmpEmail"
-        android:layout_alignLeft="@+id/cmpEmail"
-        android:layout_alignStart="@+id/cmpEmail"
-        android:hint="Dirección" />
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agregar Contacto"
-        android:id="@+id/btnAgregar"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClick" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Crear Contacto"
+                        android:id="@+id/textView"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="22dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:id="@+id/imgContacto"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_launcher"
+                        android:onClick="onImgClick"
+                        android:layout_gravity="center_horizontal" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/cmpNombre"
+                        android:layout_below="@+id/textView"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Nombre del contacto"
+                        android:layout_marginTop="15dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/cmpTelefono"
+                        android:layout_below="@+id/cmpNombre"
+                        android:hint="Teléfono"
+                        android:layout_alignRight="@+id/cmpNombre"
+                        android:layout_alignEnd="@+id/cmpNombre" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:ems="10"
+                        android:id="@+id/cmpEmail"
+                        android:layout_below="@+id/cmpTelefono"
+                        android:layout_alignRight="@+id/cmpTelefono"
+                        android:layout_alignEnd="@+id/cmpTelefono"
+                        android:hint="Correo electrónico" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:ems="10"
+                        android:id="@+id/cmpDireccion"
+                        android:layout_below="@+id/cmpEmail"
+                        android:layout_alignLeft="@+id/cmpEmail"
+                        android:layout_alignStart="@+id/cmpEmail"
+                        android:hint="Dirección" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agregar Contacto"
+                        android:id="@+id/btnAgregar"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onClick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Lista de contactos"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="15dp"
+                        android:singleLine="true" />
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 </RelativeLayout>

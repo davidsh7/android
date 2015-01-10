@@ -1,16 +1,16 @@
-package com.example.teleperformance;
+package com.example.teleperformance.entities;
 
-public class Node {
+public class clsNodeEntity {
 	
 	private String titulo;
 	private String subtitulo;
 	private int imagen;
 
-	public Node() {
+	public clsNodeEntity() {
 
 	}
 
-	public Node(String tit, String sub, int img) {
+	public clsNodeEntity(String tit, String sub, int img) {
 		titulo = tit;
 		subtitulo = sub;
 		imagen = img;
